@@ -1,8 +1,13 @@
 v1.0.1:
     - 'Initialize plugin.'
 v1.0.2:
-    - 'Created tables'
+    - 'Created Controllers'
+v1.0.3:
+    - 'Created Models'
+v1.0.4:
+    - 'Created All Tables'
     - builder_table_create_niainteractive_niacalendar_niacalendars.php
     - builder_table_create_niainteractive_niacalendar_category_niacalendars.php
     - builder_table_create_niainteractive_niacalendar_categories.php
+    - 'Added Default Categories'
     - seed_categories.php
