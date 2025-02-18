@@ -7,7 +7,6 @@ class BuilderTableCreateNiainteractiveNiaCalendarCategories extends Migration
 {
     public function up()
     {
-        Schema::dropIfExists('niainteractive_niacalendar_categories');
         
         Schema::create('niainteractive_niacalendar_categories', function($table)
         {
