@@ -11,3 +11,7 @@ v1.0.4:
     - builder_table_create_niainteractive_niacalendar_categories.php
     - 'Added Default Categories'
     - seed_categories.php
+v1.0.5:
+    - 'Updated Composer.json'
+
+    
