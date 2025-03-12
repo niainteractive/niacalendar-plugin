@@ -1,4 +1,4 @@
-<table class="table" border="1">
+<!-- <table class="table" border="1">
     <tbody>
         <tr>
             <td>Title</td>
@@ -51,4 +51,31 @@
             <td>{{ niacalendar.is_active == 1 ? 'Yes' : 'No' }}</td>
         </tr>
     </tbody>
-</table>
+</table> -->
+
+
+<div class="container p-4 rounded" style="max-width: 900px; background: #fff;">
+    <h2 class="fw-bold">{{ niacalendar.title }}</h2>
+    <p class="text-muted mb-2">{{ niacalendar.location }}</p>
+    
+    <p class="fw-semibold">
+        {{ niacalendar.start_time.format('F j, Y g:ia') }} - 
+        {{ niacalendar.end_time.format('g:ia') }}
+    </p>
+    
+    {% if niacalendar.image %}
+        <img src="{{ niacalendar.image.getPath() }}" alt="Event Image" class="img-fluid rounded mb-3" style="max-width: 100%; height: auto;">
+    {% endif %}
+    
+    {% if niacalendar.brief %}
+        <p class="fw-semibold">{{ niacalendar.brief|raw }}</p>
+    {% endif %}
+    
+    {% if niacalendar.description %}
+        <p>{{ niacalendar.description|raw }}</p>
+    {% endif %}
+    
+    {% if niacalendar.categories.count() %}
+        <p class="text-muted"><strong>Category:</strong> {{ niacalendar.categories.implode('name', ', ') }}</p>
+    {% endif %}
+</div>
