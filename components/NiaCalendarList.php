@@ -67,6 +67,6 @@ class NiaCalendarList extends ComponentBase
                 $query->whereIn('id',$categories);
             });
         }
-        $this->page['all_niacalendars'] = $query->get();
+        $this->page['all_niacalendars'] = $query->orderBy('start_time', 'asc')->orderBy('id', 'asc')->get();
     }
 }
