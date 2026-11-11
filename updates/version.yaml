@@ -13,5 +13,7 @@ v1.0.4:
     - seed_categories.php
 v1.0.5:
     - 'Updated Composer.json'
+v1.0.6:
+    - 'Style changes to default view'
 
     
